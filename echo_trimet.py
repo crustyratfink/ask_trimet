@@ -14,14 +14,14 @@ import boto3
 app = Flask(__name__)
 app.config.from_pyfile('application.cfg', silent=False)
 ask = Ask(app, '/')
-names = ["buddy","dude","chum","my friend","Dave","putzy"]
+names = ["buddy","dude","chum","my friend","Dave","putzy"] # nyuk nyuk
 
 def get_dynamo_client():
     return boto3.client(
         'dynamodb',
-        aws_access_key_id=os.environment.get('aws_access_key'),
-        aws_secret_access_key=os.environment.get('aws_secret_key'),
-        region_name=os.environment.get('aws_region')
+        aws_access_key_id=app.config["AWS_ACCESS_KEY"],
+        aws_secret_access_key=app.config["AWS_SECRET_KEY"],
+        region_name=app.config["AWS_REGION"]
         )
 
 @ask.intent('GetArrivals')

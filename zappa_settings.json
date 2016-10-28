@@ -1,0 +1,13 @@
+{
+    "prod": {
+        "environment_variables": {
+            "aws_access_key": "AKIAJ4S5J3NKP6RUGIKQ",
+            "aws_secret_key": "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",
+            "aws_region": "us-east-1"
+        },
+        "s3_bucket": "echo-trimet-prod",
+        "app_function": "echo_trimet.app",
+        "use_apigateway": false,
+        "keep_warm": false
+    }
+}

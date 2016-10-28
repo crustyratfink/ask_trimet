@@ -1,0 +1,5 @@
+boto3==1.4.1
+Flask==0.10.1
+Flask_Ask==0.7.8
+requests==2.7.0
+python_dateutil==2.5.3

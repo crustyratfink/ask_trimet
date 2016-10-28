@@ -72,18 +72,10 @@ target/
 # pyenv
 .python-version
 
-# celery beat schedule file
-celerybeat-schedule
-
 # dotenv
 .env
 
 # virtualenv
-venv/
-ENV/
+env/
 
-# Spyder project settings
-.spyderproject
-
-# Rope project settings
-.ropeproject
+application.cfg

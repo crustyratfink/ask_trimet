@@ -1,5 +1,5 @@
 # ask_trimet
-An Alexa skill to ask Portland's Tri-met about bus arrivals as you run out of the house, late for work. It requires that you have an AWS account, some knowledge of AWS Lambda, a Tri-met developer account, and a little Python mojo.
+An Alexa skill to ask Portland's Tri-met about bus arrivals as you run out of the house, late for work. It requires that you have an Echo, an AWS account, some knowledge of AWS Lambda, a [Tri-met developer account](https://developer.trimet.org/appid/registration/), and a little Python mojo.
 
 ##How it works in action:
 
@@ -17,6 +17,8 @@ or, alternatively,
 `Alexa, ask Tri-met when the next bus arrives at 123` if you're interested in a station other than your standard list.
 
 And, ideally, she'll read back a list of arrivals with the bus number and stop ID. Fingers crossed.
+
+`The next 20 bus will arrive at 785 in 5 minutes...`
 
 _Note: this part's not done. Right now, I had to set up the DynamoDB key manually. On my [todo list](#todo)._
 

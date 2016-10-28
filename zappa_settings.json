@@ -1,8 +1,9 @@
 {
-    "prod": {
+    "live": {
         "s3_bucket": "echo-trimet-prod",
         "app_function": "echo_trimet.app",
-        "use_apigateway": false,
-        "keep_warm": false
+        "use_apigateway": true,
+        "keep_warm": false,
+	"aws_region": "us-east-1"
     }
 }
